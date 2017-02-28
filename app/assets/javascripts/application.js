@@ -12,5 +12,14 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require bootstrap-sprockets
 //= require turbolinks
 //= require_tree .
+
+$(document).ready(function(){
+    $(".task-toggle").click(function(){
+    	var SH = this.SH^=1; // "Simple toggler"
+        $(this).siblings(".description").slideToggle();
+        $(this).html(SH?"Hide details":"Show details");
+    });
+});
