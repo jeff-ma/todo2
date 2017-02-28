@@ -1,0 +1,63 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+/* Task */
+
+.task {
+	border-bottom: 1px solid #CCCCCC;
+	padding-bottom: 0.5em;
+}
+.task-title {
+	margin-top: 0;
+}
+.task-desc {
+	font-size: 1em;
+}
+.task-time-ago {
+	color: darken(#e7e7e7, 50%);
+	font-size: 0.85em;
+	letter-spacing: 1.25;
+}
+.task-sub-title {
+	margin-bottom: 0;
+}
+.task:nth-child(n+1) {
+	padding-top: 1.5em;
+}
+.description {
+	display: none;
+}
+.task-toggle {
+	background-color: #98C60C; /* Green */
+	border: none;
+	border-radius: 2px;
+	color: #FFFFFF;
+}
+.task-edit {
+	background-color: #00C4FF; /* Blue */
+        border: none;
+        border-radius: 2px;
+        color: #FFFFFF;
+}
+task-map {
+	width: 100%;
+	height: 450px;
+}
+.notice, .alert {
+	text-align: center;
+}
